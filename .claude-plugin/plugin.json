@@ -1,0 +1,32 @@
+{
+  "name": "markasso",
+  "displayName": "Markasso",
+  "version": "1.0.0",
+  "description": "The whiteboard your agents draw on: architecture diagrams, flowcharts and sketches, offline or live on a shared board with people.",
+  "author": {
+    "name": "Alberto Barrago",
+    "url": "https://markasso.it"
+  },
+  "homepage": "https://markasso.it",
+  "repository": "https://github.com/AlbertoBarrago/markasso-plugin",
+  "license": "MIT",
+  "keywords": ["diagram", "whiteboard", "architecture", "flowchart", "mcp", "live", "collaboration"],
+  "mcpServers": {
+    "markasso": {
+      "command": "npx",
+      "args": ["-y", "@markasso/mcp@latest"],
+      "env": {
+        "MARKASSO_LICENSE": "${user_config.markasso_license}"
+      }
+    }
+  },
+  "userConfig": {
+    "markasso_license": {
+      "type": "string",
+      "title": "Markasso Cloud licence (optional)",
+      "description": "Only needed to draw live with people in a shared session (live_join). Leave empty for everything else, which is free. Get one at https://markasso.it/cloud",
+      "default": "",
+      "sensitive": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "markasso",
+  "description": "Markasso, the whiteboard your agents draw on.",
+  "owner": {
+    "name": "Alberto Barrago",
+    "url": "https://markasso.it"
+  },
+  "plugins": [
+    {
+      "name": "markasso",
+      "source": "./",
+      "description": "Architecture diagrams, flowcharts and sketches drawn by your agent, offline or live on a shared board with people."
+    }
+  ]
+}
