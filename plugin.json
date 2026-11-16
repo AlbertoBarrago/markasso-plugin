@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "markasso",
+  "version": "1.1.0",
+  "description": "The whiteboard your agents draw on: architecture diagrams, flowcharts and sketches, offline or live on a shared board with people.",
+  "author": {
+    "name": "Alberto Barrago",
+    "url": "https://markasso.it"
+  },
+  "homepage": "https://markasso.it",
+  "repository": "https://github.com/AlbertoBarrago/markasso-plugin",
+  "license": "MIT",
+  "keywords": ["diagram", "whiteboard", "architecture", "flowchart", "mcp", "live", "collaboration"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Markasso",
+        "shortDescription": "The whiteboard your agents draw on",
+        "longDescription": "Draw architecture diagrams, flowcharts and sketches with automatic layout and icons, export PNG or SVG, share a markasso.it link, or join a live session and draw next to the people on the board.",
+        "developerName": "Alberto Barrago",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://markasso.it",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png",
+        "defaultPrompt": [
+          "Draw the architecture of this repository with Markasso and give me a share link.",
+          "Turn this process into a Markasso flowchart with start, end and decisions."
+        ]
+      }
+    }
+  }
+}
