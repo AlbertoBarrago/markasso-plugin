@@ -1,5 +1,7 @@
 # Markasso for Claude Code and Codex
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/albertobarrago-markasso-plugin-11tlsa?v=63135e66be2fd1f63d57e713ce4b42e4)](https://m8ven.ai/mcp/albertobarrago-markasso-plugin-11tlsa?s=readme)
+
 The whiteboard your agents draw on. This plugin gives Claude the [Markasso](https://markasso.it) tools: it draws architecture diagrams, flowcharts and sketches, lays them out by itself, looks at the result, and hands you a markasso.it link, a `.markasso` file or an SVG. With a live link it joins a shared board and draws next to the people on it, in real time.
 
 ## Install
